@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <title>Formulario 2</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="./CSS/estilos2.css">
+
+</head>
+
+<body>
+   <!-- FUT -->
+   <header>
+    <h1><strong>FORMULARIO UNICO DE TRAMITE</strong></h1>
+  </header>
+    <div class="container">
+      <form action="" class="mt-3">
+        <div class="mb-2">
+          <label for="tramite_realizar" class="form-label">Trámite a realizar:</label>
+        </div>
+        <select id="tramite_realizar" class="form-select">
+          <option selected disabled>[Selecciona un trámite]</option>
+          <option value="">Acceso a la información</option>
+          <option value="">Anulación de matrícula</option>
+          <option value="">Aprobación del plan de tesis</option>
+          <option value="">Boletas de notas</option>
+          <option value="">Soporte técnico y/o informático</option>
+        </select>
+
+        <div class="row mt-3">
+          <div class="col-sm-6">
+            <label form="tipo" class="form-label">Tipo Documento</label>
+            <select id="tramite_realizar" class="form-select">
+              <option selected disabled>[Seleccionar tipo documento]</option>
+              <option value="">DNI</option>
+              <option value="">Pasaporte</option>
+              <option value="">Carné de Extranjeria</option>
+              <option value="">RUC</option>
+            </select>
+          </div>
+          <div class="col-sm-6">
+            <label for="documento" class="form-label">Número de documento</label>
+            <input type="text" id="documento" class="form-control" maxlength="15" autofocus>
+          </div>
+        </div>
+
+        <div class="row mt-3">
+          <div class="col-sm-4">
+            <label for="ape" class="form-label">Apellidos Paternos</label>
+            <input type="text" id="ape" class="form-control" maxlength="50" autofocus placeholder="">
+          </div>
+          <div class="col-sm-4">
+            <label for="apema" class="form-label">Apellidos Maternos</label>
+            <input type="text" id="apema" class="form-control" maxlength="50" autofocus>
+          </div>
+          <div class="col-sm-4">
+            <label for="nom" class="form-label">Nombres Completos</label>
+            <input type="text" id="nom" class="form-control" maxlength="50" autofocus>
+          </div>
+        </div>
+
+
+        <div class="mt-3">
+          <div class="mnb-2">
+            <label for="archivo" class="form-label">Documentos adjuntos digital</label>
+            <input type="file" id="archivo" class="form-control">
+          </div>
+        </div>
+        
+        <br>
+        <div class="text-end">
+          <button type="submit" class="btn btn-warning">Enviar FUT</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="mb-3">
+      <a href="index.html" class="btn btn-outline-light btn-sm">Regresar</a>
+    </div>
+</body>
+
+</html>
